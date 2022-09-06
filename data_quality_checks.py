@@ -1,4 +1,7 @@
-# Measure basic statictics
+import pandas as pd
+pd.set_option('display.max_columns', None)
+
+# Measure basic statistics
 
 def df_quality(df):
     """
@@ -57,7 +60,7 @@ def df_quality(df):
 
     return data_describe
 
-
+df = pd.read_csv('./data/House_Rent_Dataset.csv')
 df_preproc_qa = df_quality(df)
 print("\n Raw data statistics:", df_preproc_qa)
 
@@ -65,4 +68,4 @@ print("\n Raw data statistics:", df_preproc_qa)
 # Columns with null values
 mask = df_preproc_qa.loc['nulls', :]!=0
 col_null = df_preproc_qa.columns[mask]
-print(col_null)
+print("\n Fields with null values", col_null)
