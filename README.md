@@ -1,5 +1,5 @@
 # Data Quality
-This script provide some statistics that can be used for data quality checks such as number of unique values, data range, and number of missed values.
+This script provides some statistics that can be used for data quality checks such as number of unique values, data range, and number of missed values.
 
 ## Dataset
 Input data is provided as a csv file. We used a Kaggle dataset that is available [here](https://www.kaggle.com/datasets/iamsouravbanerjee/house-rent-prediction-dataset?resource=download).  The dataset provideds information on Houses/Apartments/Flats Available for Rent with different parameters.
